@@ -99,7 +99,8 @@ public class servlet extends HttpServlet {
 				stmnt=conn.createStatement();
 				String query2="UPDATE `names` SET `first_name` = '"+temp+"'"+" WHERE (`id` = "+"'"+i+"');";
 				stmnt.execute(query2);
-				writer.print(temp +"<br>");
+				writer.print(temp );
+				writer.printf("<br>");
 				System.out.println(temp);
 				
 			}
